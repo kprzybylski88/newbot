@@ -5,18 +5,15 @@ const config = require("./datafiles/config.json");
 const Hero = require("./Hero.js");
 class Main {
 	constructor() {
-
 		this.games = {};
 		//this.map = require("./newMap.json");
 		this.messageProcessor = new MessageProcessor();
-		/*this.hero = new Hero(false,"whatever",this.messageProcessor);
-		this.hero.take(["dupa"]);*/
 		this.client = new Discord.Client();
 		// Here we load the config.json file that contains our token and our prefix values. 
 		this.client.on("message", async message => {
 			if(message.author.bot) return;
 			var authId = message.author.id;
-			//console.log(message.channel.type);
+			console.log(message.channel.type);
 			if(message.channel.type === "text"){
 				if(message.content.indexOf(config.prefix)!=0) return;
 				var command = message.content.substring(1,message.content.length);

@@ -1,6 +1,6 @@
 {"0":
 	{"0":{
-		"0":{"description":"room 1", "exits":"e, s, u","items":[{"name":"dupa"}]},
+		"0":{"description":"room 1", "exits":"e, s, u"},
 		"1":{"description":"room 10", "exits":"e, s, u, d"},
 		"2":{"description":"room 19", "exits":"e, s, d"}
 		},
@@ -23,7 +23,7 @@
 		},
 	"1":{
 		"0":{"description":"room 5", "exits":"e, w, n, s, u"},
-		"1":{"description":"room 14", "exits":"e, w, n, s, u, d","items":[{"name":"wombat poop"},{"name":"wombat doop"}]},
+		"1":{"description":"room 14", "exits":"e, w, n, s, u, d","items":[{"name":"wombat poop"}]},
 		"2":{"description":"room 23", "exits":"e, w, n, s, d"}
 		},
 	"2":{

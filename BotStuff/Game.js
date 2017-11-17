@@ -28,18 +28,6 @@ class Game {
 				case "walkd": 
 					this.hero.walk(0,0,-1);
 					break;
-				case "takeitem": 
-					this.hero.take(commandWithArgs.args);
-					break;
-				case "locationdescribe":
-					this.hero.describe();
-					break;
-				case "listinventory":
-					this.hero.listInventory();
-					break;
-				case "dropitem":
-					this.hero.drop(commandWithArgs.args);
-					break;
 			}
 		}
 		this.checkForSaved = function(playerId) {
